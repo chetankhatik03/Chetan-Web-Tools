@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Image to Text PRO</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="app">
+
+<header>
+<h1>Image → Text PRO</h1>
+<button id="darkMode">🌙</button>
+</header>
+
+<div id="dropArea">
+<p>Drag & Drop Image Here</p>
+<input type="file" id="fileInput" multiple accept="image/*">
+</div>
+
+<div class="buttons">
+<button id="convertBtn">Extract Text</button>
+<button id="clearBtn">Clear</button>
+<button id="pdfBtn">Download PDF</button>
+</div>
+
+<div id="progress"></div>
+
+<textarea id="resultText" placeholder="Extracted text will appear here..."></textarea>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
